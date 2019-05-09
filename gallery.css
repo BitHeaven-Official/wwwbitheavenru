@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+/*font-family: 'Amatic SC', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+/*font-family: 'IBM Plex Sans', sans-serif;*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	position: sticky;
+	top: 0;
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(90deg, #000, #c8d834);
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.nav ul {
+	position: relative;
+	display: flex;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
+	animation: nav 1s 1;
+}
+
+.nav ul li {
+	list-style: none;
+}
+
+.nav ul li a {
+	margin: 20px;
+	font-size: 3em;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pOne {
+	position: sticky;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(#00aeff, #000);
+	top: 0;
+	z-index: 10;
+    overflow: hidden;
+    align-content: center;
+	align-items: center;
+}
+
+.pOne img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    animation: img 5s linear infinite;
+	margin: 0;
+	box-shadow: 0px 0px 30px #00ffff;
+}
+
+.pOne .text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    display: block;
+    color: #fff;
+}
+
+.pOne .text p {
+    display: block;
+    text-align: center;
+	font-size: 3em;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pOne .text ul {
+    display: block;
+    list-style: lower-alpha;
+}
+
+.pOne .text ul li {
+    text-align: center;
+	font-size: 2em;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@keyframes nav {
+	0% {
+		opacity: 0;
+		left: -5%;
+	}
+	50% {
+		opacity: 0;
+		left: -5%;
+	}
+	100% {
+		opacity: 1;
+		left: 0;
+	}
+}
+
+@keyframes img {
+	0%, 100%{
+        border-radius: 12% 38% 61% 23% / 76% 23% 54% 32%;
+    }
+	25% {
+        border-radius: 42% 50% 61% 43% / 42% 50% 43% 32%;
+	}
+	50% {
+        border-radius: 23% 38% 42% 63% / 76% 63% 23% 50%;
+	}
+	75% {
+        border-radius: 12% 42% 43% 23% / 43% 34% 42% 63%;
+	}
+}
+
+::-webkit-scrollbar {
+	background: #000;
+}
+::-webkit-scrollbar-thumb {
+	background: #666;
+}
